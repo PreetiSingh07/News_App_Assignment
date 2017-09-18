@@ -1,0 +1,23 @@
+
+<div *ngFor="let object of newsJsonRec.articles">
+
+<app-show-news-list [object]="object"></app-show-news-list>
+</div>
+
+
+<!-- <div class="container" >
+ <div class="row wow fadeIn" data-wow-delay="0.2s">
+               <div class="col-md-12">
+                   <h1 class="h1-responsive space">Top HeadLines....
+                     
+                   </h1>
+               </div>
+           </div>
+          
+           <hr>
+ <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
+<div  class="container col-lg-6 col-lg-6" *ngFor="let object of newsJsonRec.articles | paginate: { itemsPerPage: 6, currentPage: p }">
+<app-show-news-list [object]="object"></app-show-news-list>
+</div>
+</div><pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div> -->

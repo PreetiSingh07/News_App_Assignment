@@ -1,0 +1,28 @@
+
+<div class="container">
+<div class="card mb-3">
+
+  <img class="card-img-top size" src={{object.urlToImage}} alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">{{object.title}}</h4>
+    <p class="card-text">{{object.description}}</p>
+    <p class="card-text"><small class="text-muted">{{object.publishedAt}}</small></p>
+
+   <!--  <a class="more" href="http://timesofindia.speakingtree.in/?utm_source=TOInewHP_TILwidget&amp;utm_medium=ABtest&amp;utm_campaign=TOInewHP" rel="nofollow" pg="new_Spirituality">Read more »</a> -->
+    
+  <a href={{object.url}} class="more">Read more »</a>
+
+<button type="button" class="btn btn-danger" (click)="deleteObject(object)">Delete</button><br><br>
+ <div class="col-lg-6">
+    <div class="input-group">
+      <input [(ngModel)]="comment"class="form-control" placeholder="Comment...">
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button" (click)="addComments(object)">Add Comments</button>
+      </span>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</div>
